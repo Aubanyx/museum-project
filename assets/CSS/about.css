@@ -3,7 +3,9 @@ header {
 }
 body {
     font-family: muli, sans-serif;
+    color: #302e2f;
 }
+
 .titrepage {
     display: flex;
     background-image: url(../images/events_details/inner-banner-bg-1-1.jpg);
@@ -21,37 +23,35 @@ body {
 }
 
 h1 {
-    font-family: 'Prata', serif;   
+    font-family: 'Prata', serif;
+    color: white;
+    font-size: 5rem;
+    font-weight: 500;
 }
 
-/* fil d'ariane (breadcrumb) */
-
-
-
+           /* fil d'ariane (breadcrumb) 
 .breadcrumb ul {
     display: flex;
     list-style:none;
     margin-left:0;
     padding-left:0;
 }
-    
 .breadcrumb li::before {
     content: ": ";
 }
-    
 .breadcrumb li:first-child::before {
     content: "";
 }
-
+           fil d'ariane (breadcrumb) END */
+.breadcrumb {
+    text-transform: uppercase; 
+    color: white; 
+}
 .breadcrumb a {
     text-decoration: none;
     color: inherit;
     font-weight: inherit;
 }
-.strongest {
-    font-weight: bolder;}
-
-/* fil d'ariane (breadcrumb) END */
 
 .sstitre {
     line-height: 300%;
@@ -72,12 +72,28 @@ h3 {
     border-top: 0.3em solid #d99578;
 }
 
+.about {
+    margin-bottom: 3em;
+    padding: 0;
+    margin: 0;
+  }
+
 .titre3 {
     text-align: left;
     font-size: 120%;
     font-family: 'Prata', serif;
 }
-
+.content_about {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.dates {
+    background-color: lawngreen;
+}
 .download {
     margin: 0;
     padding: 0;
@@ -85,6 +101,7 @@ h3 {
     text-decoration: none;
     color: inherit;
     font-family: 'Prata', serif;
+    text-align: center;
 }
 
 .downlbut {
@@ -92,23 +109,29 @@ h3 {
     height: 3em;
     float:left;
     margin-right: 1.2em;
-    font-family: 'Prata', serif;
 }
 
-.boxes {
+.boxesred {
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-around;
     align-items: start;
+    background-color: palevioletred;
   }
 .btndate {
-    flex: 0 0 auto;
-    margin: 4em;
+    margin: 1em;
     background-color: #f2ebe8;
     border-radius: 6%;
     padding: 0.6em;
     font-family: 'Prata', serif;
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+  }
+  a .btndate {
     text-decoration: none;
     color: inherit;
   }
@@ -124,25 +147,24 @@ h3 {
       color: inherit;
   }
 
-  .about {
-    margin-bottom: 3em;
-  }
-  .dep {
+.dep {
     background-color: #f2ebe8;
     padding-bottom: 8em;
     margin-bottom: 8em;
 }
-  ul{ 
-    list-style: none; 
+ul{ 
+    list-style: none;
     }
-
-  ul li::before  {
-    list-style-type: square;
-    color: #d99578;
+li {
+    line-height : 500%;
+    border-bottom: 0.1em solid #f2ebe8;
+}
+ul li::before  {
+    color: #f2ebe8;
     content: "\25AA";
     display: inline-block;
     width: 1em;
-    margin-left: -1em;
+    margin-right: 2em;
   }
 
   .career {
