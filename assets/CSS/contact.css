@@ -38,6 +38,8 @@ h4{
 .head-background{
     background-image: url(../images/events_details/inner-banner-bg-1-1.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .head__title{
@@ -72,7 +74,7 @@ h4{
     flex-wrap: wrap;
     flex-direction: column;
 
-    padding: 0 15px;
+    padding: 0 5%;
     margin-bottom: 150px;
     
 }
@@ -96,6 +98,8 @@ h4{
 .museum-info__hours--dates{
     color: #302E2F;
     font-size: 1.3rem;
+    line-height: 25px;
+
 }
 
 /*Style the form*/
@@ -141,6 +145,7 @@ h4{
 .map__iframe{
 
     width:100%;
+    height: 550px;
 
 }
 
@@ -148,8 +153,6 @@ h4{
 
 /*-----Style Ohter Venues---------*/
 .venues{
-
-
     text-align: center;
 
     padding: 0 15px;
@@ -168,17 +171,37 @@ h4{
 .venues__button{
     padding: 20px 24px;
     background: none;
-	color: #cccccc;
-    border: 1px solid #cccccc;
+	color: #aaaaaa;
+    border: 1px solid #eeeeee;
     border-radius: 4px;
-    font: inherit;
+    
     font-weight: bold;
     outline: inherit;
     margin: 30px 15px;
+
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+.venues__button:hover{
+    color: #ffffff;
+    background-color: #aaaaaa;
+    border: 1px solid #aaaaaa;
+    
+    
 }
 
 
 @media only screen and (min-width: 768px) {
+
+.head{
+    position: relative;
+}
+
+.head__link{
+    max-width: 768px;
+    position: absolute;
+    bottom: 5%;
+    left: 8%;
+}
 
 }
 
