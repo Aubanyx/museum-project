@@ -1,3 +1,4 @@
+
 body{
     font-size: 1.5rem;
     font-family: muli, sans-serif;
@@ -15,6 +16,9 @@ h2{
 h3{
     font-size: 2rem;
     font-weight: 400;
+}
+h4{
+    font-size: 1.9rem;
 }
 
 .head{
@@ -78,7 +82,7 @@ h3{
 }
 
 .museum-info__image{
-    width: 100%;
+    max-width: 100%;
 }
 .museum-info__infos{
     border-bottom: 1px solid #cccccc;
@@ -151,6 +155,28 @@ h3{
     padding: 0 15px;
     margin-bottom: 150px;
 }
+.venues__list__item.two{
+    display: none;
+}
+.venues__list__item.three{
+    display: none;
+}
+.venues__list__contact{
+    font-size: 1.4rem;
+}
+
+.venues__button{
+    padding: 20px 24px;
+    background: none;
+	color: #cccccc;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font: inherit;
+    font-weight: bold;
+    outline: inherit;
+    margin: 30px 15px;
+}
+
 
 @media only screen and (min-width: 768px) {
 
