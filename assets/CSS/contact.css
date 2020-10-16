@@ -158,6 +158,16 @@ h4{
     padding: 0 15px;
     margin-bottom: 150px;
 }
+.venues__list{
+    margin: 40px 0 20px 0;
+}
+.venues__list__figure{
+    margin-top: 0;
+}
+.venues__list__item{
+    padding: 0 40px;
+    width: 400px;
+}
 .venues__list__item.two{
     display: none;
 }
@@ -166,6 +176,7 @@ h4{
 }
 .venues__list__contact{
     font-size: 1.4rem;
+    margin-bottom: 0;
 }
 
 .venues__button{
@@ -179,14 +190,10 @@ h4{
     outline: inherit;
     margin: 30px 15px;
 
-    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+    /*transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border 0.2s ease-in-out;*/
 }
 .venues__button:hover{
-    color: #ffffff;
-    background-color: #aaaaaa;
-    border: 1px solid #aaaaaa;
-    
-    
+    font-size: 34px;
 }
 
 
@@ -203,6 +210,16 @@ h4{
     left: 8%;
 }
 
+.venues__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.venues__list__item.one{
+    border-right: 1px solid #cccccc;
+}
+.venues__list__item.two{
+    display: block;
 }
 
 @media only screen and (min-width: 1024px) {
