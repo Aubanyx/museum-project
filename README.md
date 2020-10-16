@@ -1,3 +1,3 @@
 # museum-project
 
-Trello du groupe : [Trello du groupe](https://trello.com/b/oThpdeGz/museem-project) 
+[Trello du groupe](https://trello.com/b/oThpdeGz/museem-project) 
