@@ -166,7 +166,8 @@ h4{
 }
 .venues__list__item{
     padding: 0 40px;
-    width: 400px;
+    
+    max-width: 400px;
 }
 .venues__list__item.two{
     display: none;
@@ -210,13 +211,28 @@ h4{
     left: 8%;
 }
 
+.venues{
+    position: relative;
+    overflow: hidden;
+}
+.venues__button__left{
+    position: absolute;
+    top: 30%;
+    left: -30px;
+}
+.venues__button__right{
+    position: absolute;
+    top: 30%;
+    right: -30px;
+}
+
 .venues__list{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .venues__list__item.one{
-    border-right: 1px solid #cccccc;
+    border-right: 1px solid #eeeeee;
 }
 .venues__list__item.two{
     display: block;
