@@ -12,16 +12,17 @@ h1, h2, h3, h4{
 
 h2{
     font-size: 2.8rem;
+    font-weight: 400;
 }
 h3{
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 400;
 }
 h4{
     font-size: 1.9rem;
 }
 
-/* -------------------------------- */
+/* -------------- Section 1 Slider - MOBILE------------------ */
 
 .slider{
     background-image: url(../images/home/slider-1-3.jpg);
@@ -38,11 +39,15 @@ h4{
     flex-direction: column;
     align-items: center;
 
+    position: relative;
+
+    margin-bottom: 120px;
+
    
 }
 .slider__title{
     color: white;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .slider__small-title{
@@ -51,14 +56,15 @@ h4{
 }
 
 /* make lines aside the small title in slider */
+
 .slider__small-title::before,
 .slider__small-title::after {
     display: inline-block;
     content: "";
     border-top: 2px solid white;
     opacity: 0.2;
-    width: 4rem;
-    margin: 0 0.5rem;
+    width: 5.5rem;
+    margin: 0 0;
     
 }
 .slider__small-title::before{
@@ -79,12 +85,19 @@ h4{
 
     border-radius: 4px;
 
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 
     padding: 15px 45px;
 
     margin-top: 30px;
     margin-bottom: 100px;
+
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.slider__button:hover{
+    background-color: #D99578;
+    color: white;
 }
 
 .slider__nav{
@@ -92,7 +105,7 @@ h4{
     justify-content: space-between;
     align-items: center;
 
-    width: 40px;
+    width: 50px;
 }
 
 .slider__nav__inactive{
@@ -114,11 +127,150 @@ h4{
     width: 7px;
 }
 
+/*--- hide arrows for mobile ---*/
+.slider__right{
+    display: none;
+}
+.slider__left{
+    display: none;
+}
+
+/* ------------------END - SECTION 1 SLIDER - MOBILE---------------------*/
+
+/* ------------------ SECTION 2 ABOUT - MOBILE --------------------- */
+
+.about__text{
+    padding: 0 5%;
+}
+
+.about__text__section-title{
+
+    border-top: 2px solid #D99578;
+    width: max-content;
+    padding-top: 20px;
+}
+
+.about__text__button{
+    background-color: #D99578;
+    border: 1px solid #D99578;
+
+    border-radius: 4px;
+
+    color: white;
+
+    font-size: 1.3rem;
+
+    padding: 15px 45px;
+
+    margin-top: 40px;
+
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.about__text__button:hover{
+    background-color: white;
+    color: #D99578;
+}
+
+/*--- Design Illustration of Section 2 - About --- */
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 768px) {
+
+/* --------- SECTION 1 SLIDER - TABLET ---------- */
+.slider__title{
+    max-width: 450px;
+}
+.slider__small-title{
+    margin-top: 200px;
+}
+.slider__small-title::before,
+.slider__small-title::after {
+
+    width: 25rem;
+    
+}
+
+/* ---Display nav arrows ---*/
+
+.slider__right{
+    cursor: default;
+
+    display: inline-block;
+    position: absolute;
+    color: white;
+
+    font-weight: bold;
+    line-height: 0.5em;
+
+    right: 20px;
+    bottom: 60%;
+
+    transition: color 0.2s ease-in-out;
+}
+.slider__right:hover{
+    color: #D99578 !important;
+}
+.slider__left{
+    cursor: default;
+
+    display: inline-block;
+    position: absolute;
+    color: white;
+
+    font-weight: bold;
+    line-height: 0.5em;
+
+    left: 20px;
+    bottom: 60%;
+
+    transition: color 0.2s ease-in-out;
+}
+.slider__left:hover{
+    color: #D99578 !important;
+}
+.slider__left-arrow{
+    font-size: 2em;
+    font-weight: normal;
+}
+.slider__right-arrow{
+    font-size: 2em;
+    font-weight: normal;
+}
+
+/*----- END OF SECTION 1 SLIDER - TABLET---- */
 
 }
 
 @media only screen and (min-width: 1024px) {
+
+/* ---- SECTION 1 SLIDER ---- */
+
+.slider__title{
+    max-width: 600px;
+}
+
+/* ---- hide the "Prev" from tablet layout --- */
+
+.slider__left p{
+    display: none;
+}
+
+/* extend first line bars */
+
+.slider__small-title::before,
+.slider__small-title::after {
+
+    width: 54rem;
+    
+}
+
+/* ----- END SECTION 1 SLIDER ---- */
 
 }
