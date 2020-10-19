@@ -365,6 +365,12 @@ a .btndate {
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-between;
+<<<<<<< HEAD
+=======
+        margin: 1.5em 0em 1.5em 5.5em;
+        padding-top: 4em;
+        padding-bottom: 8.5em;
+>>>>>>> Olivier
     }
     .video {
         margin-top: 7em;
