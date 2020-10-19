@@ -1,9 +1,459 @@
+/* MOBILE - OPENING */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    padding: 1.5rem;
+    background-color:  #302e2f;
+    font-family: muli, sans-serif;
+}
 
+.header__container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.header__plan, .header__direction {
+    font-size: 1.5rem;
+    color: #8f8a8c;
+    margin: 0.7rem;
+    text-align: center;
+}
+
+.header__plan {
+    border-bottom: 1px solid #8f8a8c;
+}
+
+.header__direction {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.header__icon--map::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f279";
+    color: #d99578;
+}
+
+.header__icon--clock::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f017";
+    color: #d99578;
+}
+
+.header__img {
+    border-right: 1px solid #8f8a8c;
+    margin-right: 2rem;
+    padding-right: 1rem;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1.5rem;
+    width: 95%;
+    border-top: 1px solid #8f8a8c;
+}
+
+.header__line {
+    display: inline-block;
+    width: 3rem;
+    height: 0;
+    border: 1px solid #d99578;
+    margin: 0 0.3rem 0.5rem 0;
+}
+
+/* BURGER MENU - OPENING */
+#header__menu__ul > li, #header__menu__ul > li > a {
+    color: white;
+    font-weight: 700;
+    line-height: 1.8;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    outline: 0;
+    display: none;
+}
+
+#header__menu__ul > li {
+    width: 23rem;
+    text-indent: 5.6rem;
+}
+
+#header__menu--trigger, #header__burger, #header__burger:before, #header__burger:after {
+    position: absolute;
+    top: 11.5rem;
+    right: 2rem;
+    background-color: white;
+    width: 2.7rem;
+    height: 0.5rem;
+    border-radius: 0.15rem;
+    transition: .2s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#header__menu--trigger {
+    height: 2.5rem;
+    background: none;
+}
+
+#header__burger:before {
+    content: " ";
+    top: 1rem;
+    left: 0;
+}
+
+#header__burger:after {
+    content: " ";
+    top: 2rem;
+    left: 0;
+}
+
+#header__menu--toggle:checked + #header__menu--trigger + #header__burger {
+    top: 3.5rem;
+    transform: rotate(180deg);
+    transition: transform .2s ease;
+    right: 2rem;
+    z-index: 2;
+}
+
+#header__menu--toggle:checked + #header__menu--trigger + #header__burger:before {
+    width: 2rem;
+    top: -0.2rem;
+    left: 1.8rem;
+    transform: rotate(45deg) translateX(-5px);
+    transition: transform .2s ease;
+}
+
+/* BURGER MENU ARROW */
+#header__menu--toggle:checked + #header__menu--trigger + #header__burger:after {
+    width: 2rem;
+    top: 0.2rem;
+    left: 1.8rem;
+    transform: rotate(-45deg) translateX(-5px);
+    transition: transform .2s ease;
+    z-index: 2;
+}
+
+#header__menu__ul {
+    position: absolute;
+    transition: .2s;
+}
+
+#header__menu__ul > li:first-of-type {
+    margin-top: 10rem;
+}
+
+#header__menu__ul > li {
+    font-size: 3rem;
+    width: 100%;
+    border-bottom: 1px solid #8f8a8c;
+}
+
+#header__menu__ul > li:hover, #header__menu__ul > li:focus {
+    color: #8f8a8c;
+}
+
+#header__menu--toggle:checked + #header__menu--trigger + #header__burger + nav > #header__menu__ul {
+    width: 100%;
+    height: 100%;
+    background-color: #d99578;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    transition: ease-in-out .2s;
+    z-index: 1;
+}
+
+#header__menu--toggle:checked + #header__menu--trigger ~ nav > #header__menu__ul > li, #header__menu__ul > li > a {
+    display: block;
+}
+
+/* CHECKBOX NONE */
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    display: none;
+}
+/* BURGER MENU - ENDING */
+
+.header__socials--display, .header__cart--display, .header__menu__desktop--display {
+    display: none;
+}
+
+/* MOBILE - ENDING */
+
+/* TABLET - OPENING */
 @media only screen and (min-width: 768px) {
 
+    .header__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
+    .header__plan {
+        border: none;
+    }
+
+    .header__socials--display {
+        display: flex;
+        margin: 1rem;
+    }
+
+    .header__socials {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__socials__span {
+        margin: 0 1rem;
+    }
+
+    .header__socials__span, .header__a {
+        font-size: 1.5rem;
+    }
+
+    .header__socials__span:last-of-type {
+        border-right: 1px solid #8f8a8c;
+        padding-right: 1.5rem;
+    }
+
+    #header__menu--trigger, #header__burger, #header__burger:before, #header__burger:after {
+        top: 15.5rem;
+    }
+
+    #header__burger:before {
+        content: " ";
+        top: 1rem;
+        left: 0;
+    }
+
+    #header__burger:after {
+        content: " ";
+        top: 2rem;
+        left: 0;
+    }
+
+    .header__menu__cart--display {
+        display: none !important;
+    }
+
+    .header__cart--display {
+        display: block;
+    }
+
+    .header__a {
+        margin: 0 0.6rem;
+        line-height: 1.8;
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+
+    .header__icon--map {
+        display: inline;
+        border-left: 1px solid #8f8a8c;
+        padding-left: 1rem;
+    }
+
+    .header__btn {
+        padding: 0.5rem 1rem;
+        border: 1px solid #8f8a8c;
+        border-radius: 0.2rem;
+        font-size: 1.2rem;
+    }
+
+    .header__btn--primary {
+        background-color: #d99578;
+        color: white;
+        border: none;
+        padding: 0.6rem 0.7rem;
+    }
+
+    .header__btn--primary:hover {
+        border: 1px solid #d99578;
+        background-color: transparent;
+        color: #d99578;
+    }
+
+    .header__icon--facebook::before {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 900;
+        content: "\f39e";
+        color: #8f8a8c;
+    }
+
+    .header__icon--twitter::before {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 900;
+        content: "\f099";
+        color: #8f8a8c;
+    }
+
+    .header__icon--instagram::before {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 900;
+        content: "\f16d";
+        color: #8f8a8c;
+    }
+
+    .header__icon--youtube::before {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 900;
+        content: "\f431";
+        color: #8f8a8c;
+    }
+
+    .header__icon--search::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f002";
+        color: #8f8a8c;
+        font-size: 1rem;
+    }
+
+    .header__icon--arrow::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f078";
+        color: #8f8a8c;
+        font-size: 1rem;
+    }
+
+    .header__menu {
+        padding-top: 2rem;
+    }
+
+    #header__menu--trigger, #header__burger, #header__burger:before, #header__burger:after {
+        right: auto;
+    }
+
+    .header__icon--cart::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f07a";
+        color: white;
+    }
+
+    .header__cart {
+        position: relative;
+        margin-left: 35.5rem;
+        font-size: 2rem;
+        padding-right: 2rem;
+        border-right: 1px solid #8f8a8c;
+        text-decoration: none;
+    }
+
+    .header__cart::after {
+        content: "3";
+        position: absolute;
+        background-color: #d99578;
+        font-size: 1.5rem;
+        border-radius: 100%;
+        width: 1.7rem;
+        height: 1.7rem;
+        text-align: center;
+        right: 1rem;
+        bottom: 1.5rem;
+        line-height: 2.1rem;
+        text-decoration: none;
+        text-transform: none;
+        color: white;
+    }
+
+    .header__cart--display {
+        display: flex;
+        position: relative;
+        width: 100%;
+        justify-content: flex-end;
+        margin-right: 7rem;
+    }
+
+    .header__cart--display > span {
+        position: absolute;
+        right: -5rem;
+    }
+
+    .header__cart--display > .header__line:first-of-type {
+        top: 0;
+    }
+
+    .header__cart--display > .header__line:nth-of-type(2) {
+        right: -3.5rem;
+        top: 1rem;
+        width: 1.5rem;
+    }
+
+    .header__cart--display > .header__line {
+        top: 2rem;
+    }
+
 }
+/* TABLET - ENDING */
+
+/* DESKTOP - ENDING */
 
 @media only screen and (min-width: 1024px) {
 
+    .header {
+        padding-top: 0;
+    }
+
+    .header__container, .header__menu {
+        flex-wrap: nowrap;
+        min-width: max-content;
+        max-width: 60%;
+    }
+
+    .header__div__direction {
+        flex-grow: 1;
+    }
+
+    .header__menu__burger--display {
+        display: none;
+    }
+
+    .header__socials--display {
+        display: inline-block;
+    }
+
+    .header__btn, .header__btn--primary {
+        padding: 0.5rem;
+        transition: all 0.2s;
+    }
+
+    .header__menu__desktop--display {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .header__menu_desktop__a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        margin: 0 1.5rem;
+        color: white;
+        transition: ease-in-out 0.2s;
+    }
+
+    .header__menu_desktop__a:hover {
+        color: #d99578;
+    }
+
+    .header__cart--display {
+        width: auto;
+    }
+
+    .header__cart {
+        margin-left: 1rem;
+    }
 }
+/* DESKTOP - ENDING */

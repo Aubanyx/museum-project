@@ -1,9 +1,131 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../images/home/footer-bg-1-1.jpg");
+    padding: 5rem;
+    font-family: "muli", sans-serif;
+    position: relative;
+}
 
+.footer__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.footer__icon--mail::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f658";
+    color: white;
+    font-size: 2rem;
+}
+
+.footer__form__button {
+    background-color: #d99578;
+    padding: 1rem;
+    border: none;
+    height: 6rem;
+    width: 6rem;
+}
+
+.footer__form__input--email {
+    border: none;
+    padding-left: 2rem;
+    width: 20rem;
+    height: 5.8rem;
+    font-size: 1.5rem;
+}
+
+.footer__icon--arrow {
+    position: relative;
+    display: inline-block;
+}
+
+.footer__icon--arrow::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f061";
+    color: #8f8a8c;
+    position: absolute;
+    top: 3.8rem;
+    right: 2rem;
+    font-size: 2rem;
+}
+
+.footer__socials {
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.footer__socials:last-of-type {
+    margin-right: 0;
+}
+
+.footer__icon--facebook::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f39e";
+    color: #8f8a8c;
+}
+
+.footer__icon--twitter::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f099";
+    color: #8f8a8c;
+}
+
+.footer__icon--instagram::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f16d";
+    color: #8f8a8c;
+}
+
+.footer__icon--youtube::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f431";
+    color: #8f8a8c;
+}
+
+.footer__socials::before {
+    transition: color ease-in-out .2s;
+}
+
+.footer__socials:hover::before {
+    color: #d99578;
+}
+
+.footer__copyrights {
+    color: #8f8a8c;
+    padding-bottom: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.footer__copyrights__link {
+    text-decoration: none;
+    color: #d99578;
+    transition: color ease-in-out .2s;
+}
+
+.footer__copyrights__link:hover {
+    color: white;
+}
 
 @media only screen and (min-width: 768px) {
-
+    .footer__form__input--email {
+        width: 40rem;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
-
+    .footer__form__input--email {
+        width: 50rem;
+    }
 }
