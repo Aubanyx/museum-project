@@ -1,4 +1,4 @@
-
+/*--- base settings of the page ----*/
 body{
     font-size: 1.5rem;
     font-family: muli, sans-serif;
@@ -7,6 +7,8 @@ body{
 .container{
     padding: 0 5%;
     overflow: hidden;
+    max-width: 1400px;
+    margin: auto;
 }
 
 h1, h2, h3, h4{
@@ -163,7 +165,6 @@ h4{
 }
 .venues__list{
     margin: 40px 0 20px 0;
-    max-width: 1000px;
 }
 .venues__list__figure{
     margin-top: 0;
@@ -203,7 +204,7 @@ h4{
     border: 1px solid #aaaaaa;
 }
 
-
+/*-------Responsive design-------*/
 @media only screen and (min-width: 768px) {
 
 .head{
