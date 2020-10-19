@@ -333,8 +333,10 @@ a .btndate {
         left: 8%;
     }
     .depin {
-        margin-right: 0;
+        margin: 1.5em 0 1.5em 1.5em;
         padding-right: 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
     .video {
         max-height: auto;
@@ -363,9 +365,6 @@ a .btndate {
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-between;
-        margin: 1.5em 0em -22em 5.5em;
-        padding-top: 4em;
-        padding-bottom: 12em;
     }
     .video {
         margin-top: 7em;
@@ -374,5 +373,4 @@ a .btndate {
     .profil2 { margin: 1em; }
     .profil3 { margin: 1em; }
     .profil4 { margin: 1em 0em 1em 1em; } 
->>>>>>> Olivier
 }
