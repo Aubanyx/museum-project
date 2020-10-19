@@ -1,9 +1,378 @@
-
-
-@media only screen and (min-width: 768px) {
-
+body {
+    font-size: 1.5rem;
+    font-family: muli, sans-serif;
+    color: #6C6C6C;
 }
-
+.titrepage {
+    display: flex;
+    background-image: url(../images/events_details/inner-banner-bg-1-1.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    align-content: center;
+    width: 100%;
+    min-height: 20em;
+    text-align: center;
+}
+h1 {
+    font-family: 'Prata', serif;
+    color: white;
+    font-size: 5rem;
+    font-weight: 500;
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400; /* 400 vaut normal. 400+ sera plus gras */
+}
+h3 {
+    text-transform: capitalize;
+    font-family: 'Prata', serif; 
+    font-size: 4.5rem;
+    color: black;
+    font-weight: 400;
+}
+.prata {
+    font-family: 'Prata', serif; 
+}
+hr {
+    height: 0.1em;
+    color: #6C6C6C;
+    background-color: #6C6C6C;
+    border: none;
+}
+/* fil d'ariane (breadcrumb) */
+.breadcrumb {
+    text-transform: uppercase; 
+    color: white;
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+}
+.breadcrumb ul{ 
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+.breadcrumb li {
+    margin-left:2px;
+    float:left;
+}
+/* fil d'ariane (breadcrumb) END */
+/* titre des section */
+.sstitre {
+    line-height: 300%;
+    text-align: center;
+    padding: 5em 1em 1em 1em;
+}
+.borduretop {
+    padding-top: 1.5em;
+    border-top: 0.15em solid #d99578;
+}
+/* END titre des section */
+/* section about us*/
+.about {
+    margin-bottom: 4em;
+    padding: 0;
+  }
+.titre4 {
+    text-align: left;
+    font-size: 150%;
+    font-family: 'Prata', serif;
+    color: black;
+}
+.about_content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5em;
+}
+.dates {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+.download {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Prata', serif;
+    text-align: center;
+}
+.downlbut {
+    width: 3em;
+    height: 3em;
+    float:left;
+    margin-right: 1.2em;
+    margin-right: 1.2em;
+    font-family: 'Prata', serif;
+}
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.btndate {
+    display: flex;
+    margin: 0.5em 1em 0.5em 0em;
+    background-color: #f2ebe8;
+    border-radius: 6%;
+    padding: 0.6em;
+    font-family: 'Prata', serif;
+    text-decoration: none;    
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    width: 60px;
+    height: 25px;
+}
+a .btndate {
+    text-decoration: none;
+    color: inherit;
+}
+.about_download {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.btndate:hover {
+    background-color: #d99578;
+    color: white;
+}
+.more {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: inherit;
+      padding-top: 1.5em;
+      font-weight: 600;
+}
+/* END section About us*/
+/*section Departments*/
+.dep {
+    background-color: #f2ebe8;
+    padding-bottom: 8em;
+    margin-bottom: 8em;
+}
+.depin {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    margin: 1.5em;
+    padding-top: 4em;
+}
+.depa{
+    border-bottom: 0.1em solid #f2ebe8;
+    content: "\25AA";
+    width: auto;
+    margin-right: 2em;
+    padding: 2em 0em;
+    display: grid;
+    grid-template-columns: 2.5em 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 15px;
+    grid-template-areas:
+    "puce department";
+}
+.puce {
+    font-size: smaller;
+    color: #f2ebe8;
+}
+.department {
+    font-family: 'Prata', serif;
+}
+.dep1{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0em 1.5em;
+}
+.dep2{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0em 1.5em;
+}
+.career {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 20em;
+    color: white;
+    margin: 1em;
+    background-image: url(../images/about/carrer-1-1.jpg);
+    /* filter: brightness(0.6); */
+    background-position: center;
+    background-size: cover;
+}
+.titre5 {
+    font-size: 150%;
+    font-family: 'Prata', serif;
+    font-weight: 600;
+    color: white;
+}
+.businessman {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px white solid;
+}
+.businessman img {
+	max-width: 80%;
+    height: 80%;
+    display: flex;
+}
+.depin {
+      background-color: white;
+      margin: 1em;
+}
+/*END section Departments*/
+/*section video*/
+.video {
+    background-image: url(../images/about/video-2-1.jpg);
+    background-position: center;
+    height: 360px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: 'Prata', serif;  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "play"
+      "great"
+      "since";
+  }
+  .play {
+    grid-area: play;
+    margin-top: 80px;
+  }
+  .play img {
+    width: 110px;
+    height: 110px;
+    filter: invert(100%); 
+  }
+  .great {
+      grid-area: great;
+      font-size: 200%;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  .since { grid-area: since; }
+/* END section video */
+/* section Behind*/
+.behind {
+    margin-bottom: 8em;
+    text-align: center;
+    display: block;
+}
+/* profils en FLEX */
+.profils {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  .profil1 { margin: 1em; }
+  .profil2 { margin: 1em; }
+  .profil3 { margin: 1em; }
+  .profil4 { margin: 1em; } 
+  .name {
+    font-size: 1.3em;
+    font-family: 'Prata', serif; 
+    color: black;
+  }
+/* END profils en FLEX */
+.get {
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+/*END section Behind*/
+@media only screen and (min-width: 768px) {
+    .content {
+        max-width: 78em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dep {
+        padding-bottom: 0;
+    }
+     .titrepage {
+       position: relative;
+   }
+    .ariane {
+        position: absolute;
+        bottom: 5%;
+        left: 8%;
+    }
+    .depin {
+        margin-right: 0;
+        padding-right: 15px;
+    }
+    .video {
+        max-height: auto;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
 @media only screen and (min-width: 1024px) {
-
+    .about_content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1.5em;
+    }
+    .boxes {
+        flex: 1;
+        margin-left: 2em;
+    }
+    .dates {
+        flex: 1;
+        margin-right: 2em;
+    }
+    .depin {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1.5em 0em -22em 5.5em;
+        padding-top: 4em;
+        padding-bottom: 12em;
+    }
+    .video {
+        margin-top: 7em;
+    }
+    .profil1 { margin: 1em 1em 1em 0em; }
+    .profil2 { margin: 1em; }
+    .profil3 { margin: 1em; }
+    .profil4 { margin: 1em 0em 1em 1em; } 
+>>>>>>> Olivier
 }
