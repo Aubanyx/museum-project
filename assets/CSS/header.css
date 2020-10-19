@@ -33,11 +33,6 @@
     margin-bottom: 1.5rem;
 }
 
-/*.header__icon--map {*/
-/*    width: 100%;*/
-/*    display: inline-block;*/
-/*}*/
-
 .header__icon--map::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
