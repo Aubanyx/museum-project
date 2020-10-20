@@ -65,6 +65,11 @@ hr {
     margin-left:2px;
     float:left;
 }
+.ariane {
+    position: absolute;
+    bottom: 5%;
+    left: 8%;
+}
 /* fil d'ariane (breadcrumb) END */
 /* titre des section */
 .sstitre {
@@ -326,11 +331,6 @@ a .btndate {
     }
      .titrepage {
        position: relative;
-   }
-    .ariane {
-        position: absolute;
-        bottom: 5%;
-        left: 8%;
     }
     .depin {
         margin: 1.5em 0 1.5em 1.5em;
@@ -339,7 +339,6 @@ a .btndate {
         padding-bottom: 0px;
     }
     .video {
-        max-height: auto;
         margin-left: 15px;
         margin-right: 15px;
     }
