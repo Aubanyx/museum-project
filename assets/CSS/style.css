@@ -1,9 +1,242 @@
+.events {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/home/event-bg-1-1.jpg");
+    font-family: 'Prata', serif;
+}
 
+.events__background--color {
+    display: none;
+}
+
+.events__container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.events__schedule {
+    display: flex;
+    flex-direction: column;
+}
+
+.events__schedule__h2 {
+    color: #8f8a8c;
+    font-size: 2rem;
+    border-top: 1px solid #d99578;
+    width: min-content;
+    padding-top: 1rem;
+}
+
+.events__schedule__h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.events__schedule__btn {
+    border: 1px solid #8f8a8c;
+    background-color: white;
+    padding: 0.7rem;
+    text-align: left;
+    position: relative;
+    font-size: 2rem;
+    height: 5rem;
+}
+
+.events__schedule__btn:nth-of-type(2) {
+    margin: 0.5rem 0;
+}
+
+.events__schedule__btn:focus {
+    background-color: #d99578;
+    color: white;
+}
+
+.events__schedule__icon--chevronRight::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+    color: #8f8a8c;
+    position: absolute;
+    right: 1rem;
+}
+
+.events__schedule__viewAll {
+    text-decoration: none;
+    color: #8f8a8c;
+    font-size: 1.5rem;
+    margin: 4rem 0 8rem;
+    transition: color ease-in-out 0.2s
+}
+
+.events__schedule__viewAll:hover {
+    text-decoration: none;
+    color: #d99578;
+    margin-top: 2rem;
+}
+
+.events__program {
+    display: flex;
+    flex-direction: column;
+}
+
+.events__program__event {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.events__program__event:nth-of-type(2) {
+    margin: 5rem 0;
+}
+
+.events__program__event__img {
+    margin-bottom: 1rem;
+}
+
+.events__program__event--clock::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f017";
+    position: absolute;
+    color: #d99578;
+    top: 13.5rem;
+    left: 7.2rem;
+    font-size: 1.5rem;
+    background-color: white;
+    border-radius: 100%;
+    padding: 0.5rem;
+}
+
+.events__program__event--hours::before {
+    content: "10.00 - 12.00";
+    position: absolute;
+    color: #d99578;
+    top: 15rem;
+    left: 2rem;
+    background-color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.events__program__event__details {
+    position: relative;
+}
+
+.events__program__event__details__day {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.events__program__event__details__day__p {
+    font-size: 5rem;
+    color: #d99578;
+    margin: 0;
+}
+
+.events__program__event__details__date {
+    font-size: 2rem;
+    color: #8f8a8c;
+    margin-left: 2rem;
+    text-transform: uppercase;
+}
+
+.events__program__event__details__name {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.events__program__event__details__address {
+    font-size: 1.5rem;
+    color: #8f8a8c;
+}
+
+.events__program__event__details__moreDetails {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 6rem;
+    color: #8f8a8c;
+}
+
+.events__program__event__details--chevronRight::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+    color: #8f8a8c;
+    position: absolute;
+    left: 4rem;
+}
+
+.events__program__event__details__line::after {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #8f8a8c;
+    width: 4rem;
+    height: 0.5rem;
+    left: 0.1rem;
+}
 
 @media only screen and (min-width: 768px) {
+    .events__program__background--color {
+        background-color: #f1eae7;
+        width: 85%;
+        height: 85rem;
+        position: absolute;
+        right: 0;
+        top: 50rem;
+    }
 
+    .events__program__event {
+        flex-direction: row;
+    }
+    .events__program__event:first-of-type {
+        margin-top: 10rem;
+    }
+
+    .events__program__event:last-of-type {
+        margin-bottom: 5rem;
+    }
+
+    .events__schedule__btn {
+        width: 60%;
+    }
+
+    .events__program__event__details {
+        margin-left: 2rem;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
+    .events {
+        align-items: center;
+    }
 
+    .events__background--color {
+        position: absolute;
+        background-color: #f1eae7;
+        width: 50%;
+        right: 0;
+        height: 100%;
+    }
+
+    .events__container {
+        flex-direction: row;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .events__schedule {
+        width: 35%;
+        align-self: center;
+    }
+
+    .events__program {
+        width: 45%;
+    }
+
+    .events__program__background--color {
+        display: none;
+    }
 }
