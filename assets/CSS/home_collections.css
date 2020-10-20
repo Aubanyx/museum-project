@@ -1,0 +1,58 @@
+body {
+    font-size: 1.5rem;
+    font-family: muli, sans-serif;
+    color: #6C6C6C;
+}
+/* titre des section */
+.sstitre {
+    line-height: 300%;
+    text-align: center;
+    padding: 5em 1em 1em 1em;
+}
+.borduretop {
+    padding-top: 1.5em;
+    border-top: 0.15em solid #d99578;
+}
+/* END titre des section */
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400; /* 400 vaut normal. 400+ sera plus gras */
+}
+h3 {
+    text-transform: capitalize;
+    font-family: 'Prata', serif; 
+    font-size: 4.5rem;
+    color: black;
+    font-weight: 400;
+}
+.collection_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.collection_item {
+    width: 350px;
+}
+.collection_item6 {
+    max-width: 350px;
+}
+.collection_item6 img {
+    width: 350px;
+}
+.collection_item img {
+    box-shadow: 15px 15px 0px #f2ebe8; 
+}
+
+.collection_item {
+    position: relative;
+}
+
+.txtcollection {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+}
+
