@@ -4,6 +4,7 @@ body{
     font-size: 1.5rem;
     font-family: muli, sans-serif;
     color: #6C6C6C;
+
 }
 h1, h2, h3, h4{
     font-family: 'Prata', serif;
@@ -43,11 +44,11 @@ h4{
 
     margin-bottom: 120px;
 
-   
+   overflow: hidden;
 }
 .slider__title{
     color: white;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .slider__small-title{
@@ -282,7 +283,86 @@ h4{
 
 /* ---- END SECTION 2 - ABOUT - MOBILE ---*/
 
+/* ----- START OF SECTION 3 - EXHIBITION - MOBILE ---- */
 
+.exhibition{
+    background-color: #302e2f;
+    color: white;
+
+    padding: 0 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.exhibition__article__image{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.exhibition__title{
+    border-top: 2px solid #D99578;
+    width: max-content;
+    padding-top: 20px;
+
+    color: #aaaaaa;
+}
+.exhibition__main-title{
+    color: white;
+    font-size: 1.7em;
+    font-weight: 400;
+    
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.exhibition__article{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.exhibition__article__type{
+    color: #D99578;
+}
+
+.exhibition__article__title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+
+.exhibition__article__date{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 3rem;
+
+    /*margin-bottom: 30px;*/
+}
+
+.exhibition__article__link{
+    text-decoration: none;
+    color: white;
+
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    background-color: #393738;
+    padding: 15px 25px;
+
+    border: 1px solid #444444;
+    border-radius: 4px;
+
+    transition: background-color 0.2s ease-in-out;
+
+}
+
+.exhibition__article__link:hover{
+    background-color: #D99578 !important;
+}
 
 
 
@@ -408,6 +488,13 @@ h4{
 
 /*------- ENF OF SECTION 2 - ABOUT - TABLET ------ */
 
+/*----- START OF SECTION 3 - EXHIBITION - TABLET --- */
+.exhibition__article__infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -415,7 +502,8 @@ h4{
 /* ---- SECTION 1 SLIDER ---- */
 
 .slider__title{
-    max-width: 600px;
+    max-width: 850px;
+    font-size: 4.5rem;
 }
 
 /* ---- hide the "Prev" from tablet layout --- */
@@ -434,5 +522,55 @@ h4{
 }
 
 /* ----- END SECTION 1 SLIDER ---- */
+
+/* ----- START SECTION 2 ABOUT - DESKTOP ---- */
+
+.about{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1400px;
+    margin: auto;
+
+    padding: 0 5%;
+    margin-bottom: 100px;
+}
+
+.about__text{
+    grid-column: 1;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.about__illu{
+    grid-column: 2;
+    width: 100%;
+}
+
+.about__illu__image1{
+
+    left: 1rem;
+    bottom: 8rem;
+
+}
+
+/* --- END SECTION 2 - ABOUT - DESKTOP --- */
+
+/*---- START SECTION 3 - EXHIBITION - DESKTOP -- */
+
+.exhibition__main-title{
+    font-size: 4rem;
+}
+
+.exhibition__articles{
+    display: flex;
+    justify-content: space-between;
+    
+    
+
+    max-width: 1400px;
+}
+.exhibition__article{
+    max-width: 30%;
+}
 
 }
