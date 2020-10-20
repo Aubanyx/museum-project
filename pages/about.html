@@ -11,10 +11,92 @@
     <link rel="stylesheet" href="../assets/CSS/normalize.css">
     <link rel="stylesheet" href="../assets/CSS/about.css">
     <script src="https://kit.fontawesome.com/c2187d8a2a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/CSS/header.css">
 </head>
 <body>
-<header>
-  
+<!-- HEADER - OPENING -->
+<header class="header" id="header">
+    <!-- PLAN/DIRECTION/SOCIALS/SEARCH/OTHERS - OPENING -->
+    <div class="header__container">
+        <!-- PLAN - OPENING -->
+        <div>
+            <p class="header__plan header__icon--clock">
+                Plan Your Visit Today : 9<sup>&nbsp;00</sup>&nbsp;<span class="header__line"></span>&nbsp;7<sup>&nbsp;30</sup>
+            </p>
+        </div>
+        <!-- PLAN - ENDING -->
+        <!-- DIRECTION - OPENING -->
+        <div class="header__div__direction">
+            <p class="header__direction header__icon--map">
+                Get Direction
+            </p>
+        </div>
+        <!-- DIRECTION - ENDING -->
+        <!-- SOCIALS/SEARCH/OTHERS - OPENING -->
+        <div class="header__socials--display">
+            <p class="header__socials">
+                <!-- SOCIALS - OPENING -->
+                <span class="header__socials__span header__icon--facebook"></span>
+                <span class="header__socials__span header__icon--twitter"></span>
+                <span class="header__socials__span header__icon--instagram"></span>
+                <span class="header__socials__span header__icon--youtube"></span>
+                <!-- SOCIALS - ENDING -->
+                <!-- SEARCH/OTHERS - OPENING -->
+                <a class="header__a header__btn header__icon--search" href="#"></a>
+                <a class="header__a header__btn header__icon--arrow" href="#">en </a>
+                <a class="header__a header__btn header__btn--primary" href="#">Tickets</a>
+                <!-- SEARCH/OTHERS - ENDING -->
+            </p>
+        </div>
+        <!-- SOCIALS/SEARCH/OTHERS - ENDING -->
+    </div>
+    <!-- PLAN/DIRECTION/SOCIALS/SEARCH/OTHERS - ENDING -->
+
+    <!-- LOGO/BURGER/CART- OPENING -->
+    <div class="header__menu">
+        <!--  LOGO - OPENING -->
+        <div>
+            <img class="header__img" src="../assets/images/home/light-logo.png" alt="logo">
+        </div>
+        <!-- LOGO - ENDING -->
+        <!-- BURGER MENU - OPENING -->
+        <div class="header__menu__burger--display">
+            <input type="checkbox" id="header__menu--toggle"/>
+            <label id="header__menu--trigger" for="header__menu--toggle"></label>
+            <label id="header__burger" for="header__menu--toggle"></label>
+            <nav>
+                <ul id="header__menu__ul">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">The Museum</a></li>
+                    <li><a href="#">Visit</a></li>
+                    <li><a href="#">What's On</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li class="header__menu__cart--display"><a class="header__icon--cart" href="#"> Shopping Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- BURGER MENU - ENDING -->
+        <div class="header__menu__desktop--display">
+            <nav>
+                    <a class="header__menu_desktop__a" href="#">Home</a>
+                    <a class="header__menu_desktop__a" href="#">The Museum</a>
+                    <a class="header__menu_desktop__a" href="#">Visit</a>
+                    <a class="header__menu_desktop__a" href="#">What's On</a>
+                    <a class="header__menu_desktop__a" href="#">Collections</a>
+                    <a class="header__menu_desktop__a" href="#">Pages</a>
+            </nav>
+        </div>
+        <!-- CART - OPENING -->
+        <div class="header__cart--display">
+            <a class="header__cart header__icon--cart" href="#"></a>
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+            <span class="header__line"></span>
+        </div>
+        <!-- CART - ENDING -->
+    </div>
+    <!-- LOGO/BURGER/CART - ENDING -->
 </header>
 <section class="titrepage">
     <h1>About Our Museum</h1>
