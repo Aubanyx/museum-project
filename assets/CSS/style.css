@@ -1,9 +1,702 @@
+/* base settings */
+
+body{
+    font-size: 1.5rem;
+    font-family: muli, sans-serif;
+    color: #6C6C6C;
+
+}
+h1, h2, h3, h4{
+    font-family: 'Prata', serif;
+    color: #302E2F;
+}
+
+h2{
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+h3{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+h4{
+    font-size: 1.9rem;
+}
+
+/* -------------- Section 1 Slider - MOBILE------------------ */
+
+.slider{
+    background-image: url(../images/home/slider-1-3.jpg);
+    background-position: center;
+    background-size: cover;
+
+    color: white;
+
+    padding: 140px 20px 20px 20px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    margin-bottom: 120px;
+
+   overflow: hidden;
+}
+.slider__title{
+    color: white;
+    font-weight: 400;
+}
+
+.slider__small-title{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+/* make lines aside the small title in slider */
+
+.slider__small-title::before,
+.slider__small-title::after {
+    display: inline-block;
+    content: "";
+    border-top: 2px solid white;
+    opacity: 0.2;
+    width: 5.5rem;
+    margin: 0 0;
+    
+}
+.slider__small-title::before{
+    transform: translate(-4rem, -0.5rem);   
+}
+.slider__small-title::after{
+    transform: translate(4rem, -0.5rem);   
+}
+
+.slider__text{
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+
+.slider__button{
+    background-color: white;
+    border: none;
+
+    border-radius: 4px;
+
+    font-size: 1.3rem;
+
+    padding: 15px 45px;
+
+    margin-top: 30px;
+    margin-bottom: 100px;
+
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.slider__button:hover{
+    background-color: #D99578;
+    color: white;
+}
+
+.slider__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 50px;
+}
+
+.slider__nav__inactive{
+    background-color: #D99578;
+    border: 2px solid #D99578;
+    border-radius: 3px;
+
+    transform: rotate(45deg);
+
+    height: 7px;
+    width: 7px;
+}
+.slider__nav__active{
+    border: 2px solid white;
+    border-radius: 3px;
+
+
+    height: 7px;
+    width: 7px;
+}
+
+/*--- hide arrows for mobile ---*/
+.slider__right{
+    display: none;
+}
+.slider__left{
+    display: none;
+}
+
+/* ------------------END - SECTION 1 SLIDER - MOBILE---------------------*/
+
+/* ------------------ SECTION 2 ABOUT - MOBILE --------------------- */
+
+
+.about__text{
+    padding: 0 5%;
+    margin-bottom: 100px;
+}
+
+.about__text__section-title{
+
+    border-top: 2px solid #D99578;
+    width: max-content;
+    padding-top: 20px;
+}
+
+.about__text__button{
+    background-color: #D99578;
+    border: 1px solid #D99578;
+
+    border-radius: 4px;
+
+    color: white;
+
+    font-size: 1.3rem;
+
+    padding: 15px 45px;
+
+    margin-top: 40px;
+
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.about__text__button:hover{
+    background-color: white;
+    color: #D99578;
+}
+
+/*--- Design Illustration of Section 2 - About --- */
+
+.about{
+    margin-bottom: 120px;
+}
+
+.about__illu{
+    position: relative;
+
+    max-width: 40rem;
+    height: 36rem;
+
+    margin: auto;
+}
+
+.about__illu__whitebox{
+
+    display: flex;
+    justify-content: space-evenly;
+  
+
+    position: absolute;
+
+    border: 2px solid #eeeeee;
+
+    color: #302e2f;
+    font-family: 'Prata', serif;
+
+    height: 26rem;
+    width: 26rem;
+
+    padding-top: 2rem;
+
+    top: 0;
+    right: 3rem;
+
+    z-index: 2;
+}
+
+.about__illu__established{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+    height: 10%;
+   
+}
+
+.about__illu__established__gradient{
+    width: 20%;
+    height: 4rem;
+    border-right: 2px solid #D99578;
+
+    /*CSS Gradient */
+    background: rgb(242,222,213);
+    background: linear-gradient(180deg, rgba(242,222,213,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.about__illu__established__e{
+    font-size: 4.8rem;
+    padding-top: 0.8rem;
+    margin: 0;
+}
+.about__illu__established__date{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+.about__illu__image1{
+    
+    position: absolute;
+    height: 26rem;
+    width: 26rem;
+
+    left: 0;
+    bottom: 3rem;
+
+    z-index: 1;
+}
+
+.about__illu__image2{
+    
+    position: absolute;
+    height: 26rem;
+    width: 26rem;
+
+    right: 0;
+    bottom: 0;
+
+    z-index: 3;
+}
+.about__illu__orange{
+
+    position: absolute;
+    background-color: #D99578;
+    height: 29rem;
+    width: 26rem;
+
+    right: 5rem;
+    bottom: 0;
+}
+
+
+
+/* ---- END SECTION 2 - ABOUT - MOBILE ---*/
+
+/* ----- START OF SECTION 3 - EXHIBITION - MOBILE ---- */
+
+.exhibition{
+    background-color: #302e2f;
+    color: white;
+
+    padding: 0 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.exhibition__article__image{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.exhibition__title{
+    border-top: 2px solid #D99578;
+    width: max-content;
+    padding-top: 20px;
+
+    color: #aaaaaa;
+}
+.exhibition__main-title{
+    color: white;
+    font-size: 1.7em;
+    font-weight: 400;
+    
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.exhibition__article{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.exhibition__article__type{
+    color: #D99578;
+}
+
+.exhibition__article__title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+
+.exhibition__article__date{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 3rem;
+
+    /*margin-bottom: 30px;*/
+}
+
+.exhibition__article__link{
+    text-decoration: none;
+    color: white;
+
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    background-color: #393738;
+    padding: 15px 25px;
+
+    border: 1px solid #444444;
+    border-radius: 4px;
+
+    transition: background-color 0.2s ease-in-out;
+
+}
+
+.exhibition__article__link:hover{
+    background-color: #D99578 !important;
+}
+
+/*----- END SECTION 3 EXHIBITION ------*/
+
+
+
+/*---- START SECTION 8 TESTIMONIALS MOBILE ---- */
+.testimonials{
+    padding: 120px 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    background-image: url(../images/home/testi-1-1-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.testimonials__testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 40px;
+
+    max-width: 580px;
+}
+
+.testimonials__photo{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 40px;
+
+}
+
+.testimonials__photo__profile{
+    border-radius: 50%;
+}
+.testimonials__photo__around{
+    position: absolute;
+    width: 120px;
+}
+
+.testimonials__testimonial__identity{
+    background-color: white;
+    border-radius: 4px;
+
+    line-height: 0.8rem;;
+
+    padding: 0 60px;
+    margin-bottom: 50px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonials__testimonial__identity__name{
+    font-size: 2.2rem;
+    font-weight: 400;
+
+    
+}
+
+.testimonials__testimonial__identity_location{
+    color: #D99578;
+    margin-top: -10px;
+}
+
+.testimonials__testimonial__identity__triange{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+
+    position: absolute;
+    top: 100%;
+}
+
+.testimonials__testimonial__text{
+    font-family: 'Prata', serif;
+    font-size: 2rem;
+
+    line-height: 3.5rem;
+
+    color: #302e2f;
+}
+
+.testimonials__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80px;
+}
+
+.testimonials__nav__inactive{
+    height: 8px;
+    width: 8px;
+
+    background-color: #302e2f;
+    opacity: 0.2;
+
+    border-radius: 50%;
+
+    transition: opacity 0.2s ease-in-out;
+}
+
+.testimonials__nav__inactive:hover{
+ 
+    opacity: 1;
+
+}
+.testimonials__nav__line{
+    display: inline-block;
+    width: 3rem;
+    height: 0;
+    border: 1px solid #d99578;
+}
+
+
 
 
 @media only screen and (min-width: 768px) {
 
+/* --------- SECTION 1 SLIDER - TABLET ---------- */
+.slider__title{
+    max-width: 450px;
+}
+.slider__small-title{
+    margin-top: 200px;
+}
+.slider__small-title::before,
+.slider__small-title::after {
+
+    width: 25rem;
+    
+}
+
+/* ---Display nav arrows ---*/
+
+.slider__right{
+    cursor: default;
+
+    display: inline-block;
+    position: absolute;
+    color: white;
+
+    font-weight: bold;
+    line-height: 0.5em;
+
+    right: 20px;
+    bottom: 60%;
+
+    transition: color 0.2s ease-in-out;
+}
+.slider__right:hover{
+    color: #D99578 !important;
+}
+.slider__left{
+    cursor: default;
+
+    display: inline-block;
+    position: absolute;
+    color: white;
+
+    font-weight: bold;
+    line-height: 0.5em;
+
+    left: 20px;
+    bottom: 60%;
+
+    transition: color 0.2s ease-in-out;
+}
+.slider__left:hover{
+    color: #D99578 !important;
+}
+.slider__left-arrow{
+    font-size: 2em;
+    font-weight: normal;
+}
+.slider__right-arrow{
+    font-size: 2em;
+    font-weight: normal;
+}
+
+/*----- END OF SECTION 1 SLIDER - TABLET---- */
+
+
+/*---- START SECTION 2 - ABOUT - TABLET--------- */
+
+/*--Adapt Title size-- */
+.about h3{
+    font-size: 4rem;
+}
+
+/*adapt illustration*/
+
+.about__illu{
+
+    max-width: 48rem;
+    height: 45rem;
+
+}
+.about__illu__whitebox{
+
+    height: 30rem;
+    width: 30rem;
+
+}
+.about__illu__established__gradient{
+    width: 40%;
+}
+
+.about__illu__image1{
+    
+    height: 30rem;
+    width: 30rem;
+
+    left: 1rem;
+    bottom: 8rem;
+
+}
+
+.about__illu__image2{
+    
+    height: 30rem;
+    width: 30rem;
+
+    right: 0;
+    bottom: 0;
+}
+.about__illu__orange{
+
+    height: 33rem;
+    width: 30rem;
+
+    right: 8rem;
+    bottom: 2.5rem;
+}
+
+/*------- ENF OF SECTION 2 - ABOUT - TABLET ------ */
+
+/*----- START OF SECTION 3 - EXHIBITION - TABLET --- */
+.exhibition__article__infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 }
 
 @media only screen and (min-width: 1024px) {
+
+/* ---- SECTION 1 SLIDER ---- */
+
+.slider__title{
+    max-width: 850px;
+    font-size: 4.5rem;
+}
+
+/* ---- hide the "Prev" from tablet layout --- */
+
+.slider__left p{
+    display: none;
+}
+
+/* extend first line bars */
+
+.slider__small-title::before,
+.slider__small-title::after {
+
+    width: 54rem;
+    
+}
+
+/* ----- END SECTION 1 SLIDER ---- */
+
+/* ----- START SECTION 2 ABOUT - DESKTOP ---- */
+
+.about{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1400px;
+    margin: auto;
+
+    padding: 0 5%;
+    margin-bottom: 100px;
+}
+
+.about__text{
+    grid-column: 1;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.about__illu{
+    grid-column: 2;
+    width: 100%;
+}
+
+.about__illu__image1{
+
+    left: 1rem;
+    bottom: 8rem;
+
+}
+
+/* --- END SECTION 2 - ABOUT - DESKTOP --- */
+
+/*---- START SECTION 3 - EXHIBITION - DESKTOP -- */
+
+.exhibition__main-title{
+    font-size: 4rem;
+}
+
+.exhibition__articles{
+    display: flex;
+    justify-content: space-between;
+    
+    
+
+    max-width: 1400px;
+}
+.exhibition__article{
+    max-width: 30%;
+}
 
 }
