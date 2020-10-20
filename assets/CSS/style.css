@@ -258,6 +258,12 @@
     background-color: white;
     color: #8f8a8c;
     text-transform: uppercase;
+    transition: all ease-in-out .2s;
+}
+
+.member__container__list__a:hover {
+    color: white;
+    background-color: #d99578;
 }
 /* MEMBER - ENDING */
 
