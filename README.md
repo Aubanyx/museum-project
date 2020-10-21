@@ -36,6 +36,7 @@ Prata, Muli
 ## Responsive ?
 
 YES. We did it and we are proud of it.
+
 ![yes](https://i.imgflip.com/4j9t1l.jpg)
 
 
