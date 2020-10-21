@@ -1,4 +1,12 @@
-
+.footerbackToTop {
+    position: fixed;
+    padding: 1rem;
+    bottom: 2rem;
+    right: 2rem;
+    border: 1px solid #8f8a8c;
+    background-color: #302e2f;
+    text-decoration: none;
+}
 
 @media only screen and (min-width: 768px) {
 

@@ -1,9 +1,764 @@
 
-
-@media only screen and (min-width: 768px) {
-
+h1 {
+    font-family: 'Prata', serif;
+    font-size: 1.2em;
+    color: rgb(48, 46, 47);
+    font-weight: lighter;
+}
+h2 {
+    font-family: 'Prata', serif;
+    font-size: 1em;
+    color: rgb(48, 46, 47);
+    font-weight: lighter;
+}
+h4 {    
+    font-family: 'Prata', serif;
+    font-size: 2.5em;
+    color: rgb(48, 46, 47);
+    color: white;
+    /* font-weight: lighter; */
+}
+h5 {
+    font-family: muli, sans-serif;
+    font-size: 1.2em;
+}
+h6 {
+    font-family: muli, sans-serif;
+    font-size: 1.2em;
+}
+p {
+    font-family: muli, sans-serif;
+    font-size: 1em;
+    color: grey;
+}
+a:link {
+    color: lightgrey;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
 }
 
-@media only screen and (min-width: 1024px) {
+.footerbackToTop {
+    position: fixed;
+    padding: 1rem;
+    bottom: 2rem;
+    right: 2rem;
+    border: 1px solid #8f8a8c;
+    background-color: #302e2f;
+    text-decoration: none;
+}
+.footerbackToTop:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f077";
+    color: #8f8a8c;
+    font-size: 2rem;
+}
 
+    /* Head avec photo et recherche */
+    .head {
+    background-image: url("../images/events_details/inner-banner-bg-1-1.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    /* background-image: cover; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .monthHeadBox {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        padding-top: 10em;
+        width: 80%;
+    }
+    #monthHead {
+    padding-bottom: 4em;
+    border-bottom: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    align-self: center;
+    }
+    .search {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        padding-top: 2em;
+    }
+    #searchMonth {
+        align-self: center;
+        border-bottom-color: white;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        padding-bottom: 1em;
+        width: 50%;
+        padding-left: 4em;
+    }
+    #searchDate {
+        padding-left: 0.1em;
+        padding-top: 1em;
+        align-self: center;
+        padding-bottom: 1em;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px; 
+    }
+    .navBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navItem1 {
+        padding-top: 2em;
+        padding-bottom: 0.6em;
+        padding-left: 2em;
+        padding-right: 15em;
+        background-color: white;
+        border-bottom-color: lightgrey;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .navItem2 {
+        padding-top: 2em;
+        padding-left: 2em;
+        padding-right: 15em;
+        padding-bottom: 0.5em;
+        background-color: white;
+    }
+    .navItemLink {
+        padding-top: 2em;
+        background-color: rgb(48, 46, 47);
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1em;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+}
+    .mainGlobal  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .boxMedium {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #more {
+        visibility: hidden;
+    }
+    /* Bouton previous next */
+    .buttonPreNext {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 30px;   
+    }
+    #prev {
+        background-color: white;
+        margin-right: 4px;
+        border-radius: 5px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Prata', serif;
+        font-size: 1.2em;
+        color: rgb(48, 46, 47);
+        font-weight: lighter;
+    }
+    #one {
+        background-color:rgb(217, 149, 120);
+        margin-right: 4px;
+        border-radius: 5px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        padding-right: 12px;
+        padding-left: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Prata', serif;
+        font-size: 1.2em;
+        color: rgb(48, 46, 47);
+        font-weight: lighter;
+    }
+    #two {
+        background-color:white;
+        margin-right: 4px;
+        border-radius: 5px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Prata', serif;
+        font-size: 1.2em;
+        color: rgb(48, 46, 47);
+        font-weight: lighter;
+    }
+    #next {
+        background-color: white;
+        margin-right: 4px;
+        border-radius: 5px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Prata', serif;
+        font-size: 1.2em;
+        color: rgb(48, 46, 47);
+        font-weight: lighter;
+    }
+
+/* Ecran petit */
+@media only screen and (min-width: 768px) {
+    /* .mainGlobal {
+
+    }
+    .main {
+  
+    } */
+    /* Head avec photo et recherche */
+     .head {
+    background-image: url("../images/events_details/inner-banner-bg-1-1.jpg");
+    }
+    #monthHead {
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding-top: 10em;
+        padding-bottom: 2em;
+        border-bottom: white;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+    .search {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        padding-top: 2em;
+    }
+    #searchMonth {
+        border-right: white;
+        border-right-style: solid;
+        border-right-width: 1px;
+        padding-right: 20px;
+    }
+    #searchDate {
+        padding-left: 20px;
+    } 
+    /* Barre de menu */
+    /* .nav {
+        display: flex;
+        flex-direction: column;
+  
+        background-color: white;
+        color: grey;
+    }
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        padding-top: -5px;
+    }
+    .navItem1 {
+        padding-top: 0.8em;
+        padding-bottom: 0.4em;
+        padding-left: 2em;
+        padding-right: 10em;
+    }
+    .navItem2 {
+        padding-top: 2em;
+        padding-left: 2em;
+        padding-right: 5em;
+    }
+    .navItemLink {
+        padding-top: 2em;
+        background-color: black;
+        padding-left: 1em;
+        padding-right: 1em;
+        border-radius: 5px;
+} */
+
+    /* Petite boite "tour" sur l'image */
+    /* .tourBox {
+        background-color: white;
+        width: 12%;
+        height: 13%;;
+        margin-top: -15px;
+        padding-bottom: -25px;
+        margin-right: 5px;
+        padding-right: 10px;
+        padding-left: 5px;
+        display: flex;
+        align-items: flex-end;
+        float: right;
+    }
+    #tour {
+        font-size: 1em;
+        padding-top: 20px;
+    } */
+     /*Liste des évenèments  */
+    /* .boxImage1 {
+        background-image: url("../images/events/event-4-1.jpg");
+        background-size: 100% 100%;
+        margin-top: 3em;
+    }
+    .boxImage2 {
+        background-image: url("../images/events/event-4-2.jpg");
+        background-size: 100% 100%;
+        margin-top: 3em;
+    }
+    .boxImage3 {
+        background-image: url("../images/events/event-4-3.jpg");
+        background-size: 100% 100%;
+        margin-top: 3em;
+    }
+    .boxImage4 {
+        background-image: url("../images/events/event-4-4.jpg");
+        background-size: 100% 100%;
+        margin-top: 3em;
+    }
+    .boxImage5 {
+        background-image: url("../images/events/event-4-5.jpg");
+        background-size: 100% 100%;
+        margin-top: 3em;
+    }
+    .boxImage6 {
+        background-image: url("../images/events/event-4-6.jpg");
+        background-size: 100% 100%;
+        margin-top: 3em;
+    }
+    .boxText {
+        margin-top: 70px;
+        margin-right: 50px;
+        margin-bottom: -10px;
+    } 
+    #boxSmall1 {
+        background-color: white;
+        width: 70%;
+        padding-left: 10px;
+        padding-top: 7px;
+        padding-bottom: 3px;
+        border-bottom-color: lightgray;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+    #boxSmall2 {
+        background-color: white;
+        width: 70%;
+        padding-left: 10px;
+        padding-top: 3px;
+        padding-bottom: 5px;
+    } */
+    /* Bouton previous next */
+    /* .buttonPreNext {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 30px;   
+    }
+    #prev {
+        background-color: white;
+        margin-right: 4px;
+        border-radius: 5px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Prata', serif;
+        font-size: 1.2em;
+        color: rgb(48, 46, 47);
+        font-weight: lighter;
+    }
+    #one {
+        background-color:rgb(217, 149, 120);
+        margin-right: 4px;
+        border-radius: 5px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        padding-right: 12px;
+        padding-left: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Prata', serif;
+        font-size: 1.2em;
+        color: rgb(48, 46, 47);
+        font-weight: lighter;
+    }
+    #two {
+        background-color:white;
+        margin-right: 4px;
+        border-radius: 5px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Prata', serif;
+        font-size: 1.2em;
+        color: rgb(48, 46, 47);
+        font-weight: lighter;
+    }
+    #next {
+        background-color: white;
+        margin-right: 4px;
+        border-radius: 5px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Prata', serif;
+        font-size: 1.2em;
+        color: rgb(48, 46, 47);
+        font-weight: lighter;
+    } */
+}
+    /* Ecran large */
+@media only screen and (min-width: 1024px) {
+    .mainGlobal {
+        display: flex;
+        justify-content: center;
+    }
+    /* Head avec image de fond et recherche */
+    .head {
+        background-image: url("../images/events_details/inner-banner-bg-1-1.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        }
+    .monthHeadBox {
+        display: flex;
+        justify-content: center;
+        border-bottom: white;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        width: 40%;
+        /* opacity: 50%; */
+    }
+        #monthHead {
+            color: white;
+            padding-top: 5em;
+            padding-bottom: 2em;
+            padding-right: 5em;
+            padding-left: 5em;
+            border-bottom-color: transparent;
+            
+            /* align-self: center; */
+        }
+        .search {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            color: white;
+            padding-top: 2.5em;
+            margin-left: 40rem;
+            padding-bottom: 5em;
+            padding-right: -15em;
+    
+        }
+    #searchMonth {
+        border-right: transparent;
+        /* border-right-style: solid;
+        border-right-width: 1px; */
+        border-bottom: transparent;
+        padding-left: 15em;
+        padding-top: 1em;
+
+
+    }
+    #searchDate {
+        padding-top: -2.5em;
+        padding-left: 2em;
+        margin-left: -20em;
+        border-left-color: white;
+        border-left-width: 1px;
+        border-left-style:solid;
+    }
+
+    }
+    /* Barre de menu */
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
+        margin-top: 30em;
+        margin-left: 34em;
+        position: absolute;
+    }
+    .navBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        -webkit-box-shadow: 0 8px 6px -6px lightgray;
+        -moz-box-shadow: 0 8px 6px -6px lightgrey;
+         box-shadow: 0 8px 6px -6px lightgrey;
+
+    }
+    .navItem1 {
+        margin-top: 3em;
+        padding-top: 2em;
+        padding-left: 2em;
+        padding-right: 13em;
+        border-right: lightgrey;
+        border-right-style: solid;
+        border-right-width: 0.01em;
+        background-color: white;
+        border-radius: 0px;
+        color: grey;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .navItem2 {
+        margin-top: 3em;
+        padding-top: 2.2em;
+        padding-bottom: 0.4em;
+        padding-left: 2em;
+        padding-right: 4em;
+        background-color: white;
+        color: grey;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .dropdown {
+        display: none;
+        background-color: #f28c8c;
+        min-width: 50px;
+    }
+    .navItem1:hover .dropdown {
+        display: block;
+    }
+    .navItem2:hover .dropdown {
+        display: block;
+    }
+    .navItemLink {
+        margin-top: 3em;
+        padding-top: 2.4em;
+        background-color: rgb(48, 46, 47);
+        padding-left: 1em;
+        padding-right: 1.4em;
+        color: white;
+        font-weight: bold;
+    }
+    .mainGlobal {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    /* Petite boite blanche "tour" sur image */
+    .tourBox {
+        background-color: white;
+        width: 12%;
+        height: 13%;;
+        margin-top: -15px;
+        padding-bottom: -25px;
+        margin-right: 5px;
+        padding-right: 10px;
+        padding-left: 5px;
+        display: flex;
+        align-items: flex-end;
+        float: right;
+    }
+    #tour {
+        font-size: 1em;
+        padding-top: 10px;
+    }
+    /* liste des évenements */
+    .boxMedium {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+    .boxImage1 {
+        background-image: url("../images/events/event-4-1.jpg");
+        background-size: 100% 100%;
+        margin-top: 5em;
+        padding-top: 2em;
+        margin-right: 1em;
+    }
+    .boxImage2 {
+        background-image: url("../images/events/event-4-2.jpg");
+        background-size: 100% 100%;
+        margin-top: 5em;
+        padding-top: 2em;
+        margin-left: 1em;
+    }
+    .boxImage3 {
+        background-image: url("../images/events/event-4-3.jpg");
+        background-size: 100% 100%;
+        margin-top:2em;
+        padding-top: 2em;
+        margin-right: 1em;
+    }
+    .boxImage4 {
+        background-image: url("../images/events/event-4-4.jpg");
+        background-size: 100% 100%;
+        margin-top:2em;
+        padding-top: 2em;
+        margin-left: 1em;
+    }
+    #more {
+        background-color:rgb(217, 149, 120) ;
+        border-radius: 2px;
+        padding-top: 0.8em;
+        padding-bottom: 0.2em;
+        margin-right: 1.5em;
+        color: white;
+        text-align: center;
+        visibility: visible;
+    }
+    .boxImage5 {
+        background-image: url("../images/events/event-4-5.jpg");
+        background-size: 100% 100%;
+        margin-top:2em;
+        padding-top: 2em;
+        margin-right: 1em;
+    }
+    .boxImage6 {
+        background-image: url("../images/events/event-4-6.jpg");
+        background-size: 100% 100%;
+        margin-top:2em;
+        padding-top: 2em;
+        margin-left: 1em;
+    }
+    .boxText {
+        margin-top: 70px;
+        margin-right: 50px;
+        margin-bottom: -10px;
+    } 
+    .boxText-4 {
+        margin-top: 56px;
+        margin-right: 50px;
+        margin-bottom: -10px;
+    } 
+    #boxSmall1 {
+        background-color: white;
+        width: 70%;
+        padding-left: 10px;
+        padding-top: 7px;
+        padding-bottom: 3px;
+        border-bottom-color: lightgray;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+    #boxSmall1-4 {
+        background-color: white;
+        width: 70%;
+        margin-top: -20px;
+        padding-left: 10px;
+        padding-top: 7px;
+        padding-bottom: 3px;
+        border-bottom-color: lightgray;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+    #boxSmall2 {
+        background-color: white;
+        width: 70%;
+        padding-left: 10px;
+        padding-top: 3px;
+        padding-bottom: 5px;
+    }
+    #buttonPreNext {
+        display: flex;
+        flex-direction: row;
+    }
+    /* bouton previous et next */
+    #prev {
+        background-color: white;
+        margin-right: 4px;
+        border-radius: 5px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Prata', serif;
+        font-size: 1.2em;
+        color: rgb(48, 46, 47);
+        font-weight: lighter;
+    }
+    #one {
+        background-color:rgb(217, 149, 120);
+        margin-right: 4px;
+        border-radius: 5px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        padding-right: 12px;
+        padding-left: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Prata', serif;
+        font-size: 1.2em;
+        color: rgb(48, 46, 47);
+        font-weight: lighter;
+    }
+    #two {
+        background-color:white;
+        margin-right: 4px;
+        border-radius: 5px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Prata', serif;
+        font-size: 1.2em;
+        color: rgb(48, 46, 47);
+        font-weight: lighter;
+    }
+    #next {
+        background-color: white;
+        margin-right: 4px;
+        border-radius: 5px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 1px;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Prata', serif;
+        font-size: 1.2em;
+        color: rgb(48, 46, 47);
+        font-weight: lighter;
+    }
 }
