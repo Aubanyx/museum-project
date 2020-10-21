@@ -23,6 +23,23 @@ h4{
     font-size: 1.9rem;
 }
 
+.footerbackToTop {
+    position: fixed;
+    padding: 1rem;
+    bottom: 2rem;
+    right: 2rem;
+    border: 1px solid #8f8a8c;
+    background-color: #302e2f;
+    text-decoration: none;
+}
+.footerbackToTop:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f077";
+    color: #8f8a8c;
+    font-size: 2rem;
+}
+
 /* -------------- Section 1 Slider - MOBILE------------------ */
 
 .slider{
