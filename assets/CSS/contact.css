@@ -1,9 +1,369 @@
+/*--- base settings of the page ----*/
+body{
+    font-size: 1.5rem;
+    font-family: muli, sans-serif;
+    color: #6C6C6C;
+}
+.container{
+    padding: 0 5%;
+    overflow: hidden;
+    max-width: 1500px;
+    margin: auto;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Prata', serif;
+    color: #302E2F;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+h4{
+    font-size: 1.9rem;
+}
+
+/* --------------------------- */
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 400px;
+
+    color: white;
+
+    margin-bottom: 150px;
+}
+
+.head-background{
+    background-image: url(../images/events_details/inner-banner-bg-1-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head__title{
+    
+    color: white;
+
+    font-size: 5rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.head__text{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.head__arianne{
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.head__arianne-link{
+    text-decoration: none;
+    color: white;
+}
+
+/*----- Style the info section -----*/
+
+.museum-info{
+    
+    margin-bottom: 150px;
+
+    
+}
+
+.museum-info__figure{
+    margin: 0;
+}
+
+.museum-info__image{
+    max-width: 100%;
+}
+.museum-info__infos-hours{
+    margin-top: 40px;
+}
+.museum-info__infos{
+    border-bottom: 1px solid #eeeeee;
+
+    padding: 15px 0;
+}
+.museum-info__hours{
+    padding: 15px 0;
+}
+
+.museum-info__hours--dates{
+    color: #302E2F;
+    font-size: 1.3rem;
+    line-height: 25px;
+
+}
+
+/*Style the form*/
 
 
+.museum-info__form label{
+
+    font-family: 'Prata', serif;
+    color: #302E2F;
+    
+}
+.museum-info__form input{
+    height: 50px;
+    width: 100%;
+
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.museum-info__form #message{
+    height: 150px;
+}
+.form__submit{
+    color: white;
+    background-color: #302E2F;
+    border: none !important;
+    border-radius: 4px;
+    width: 200px !important;
+    font-size: 1.4rem;
+}
+/* ----------------- */
+
+/*-----------Style map section--------*/
+.map{
+
+    /*padding: 0 15px;*/
+    margin-bottom: 150px;
+
+
+}
+.map__iframe{
+
+    width:100%;
+    height: 550px;
+
+}
+
+/*-------------*/
+
+/*-----Style Ohter Venues---------*/
+.venues{
+    text-align: center;
+    margin-bottom: 150px;
+
+}
+.venues__list{
+    margin: 40px 0 20px 0;
+}
+.venues__list__figure{
+    margin-top: 0;
+}
+.venues__list__item{
+    padding: 0 40px;
+    
+    max-width: 400px;
+}
+.venues__list__item.two{
+    display: none;
+}
+.venues__list__item.three{
+    display: none;
+}
+.venues__list__contact{
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.venues__button{
+    padding: 20px 24px;
+    background: none;
+	color: #aaaaaa;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    
+    font-weight: bold;
+    outline: inherit;
+    margin: 30px 15px;
+
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+.venues__button:hover{
+    color: white;
+    background-color: #aaaaaa;
+    border: 1px solid #aaaaaa;
+}
+
+/* ------ Back to top button -----*/
+.footerbackToTop {
+    position: fixed;
+    padding: 1rem;
+    bottom: 2rem;
+    right: 2rem;
+    border: 1px solid #8f8a8c;
+    background-color: #302e2f;
+    text-decoration: none;
+}
+
+.footerbackToTop:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f077";
+    color: #8f8a8c;
+    font-size: 2rem;
+}
+
+
+/*-------Responsive design-------*/
 @media only screen and (min-width: 768px) {
 
+.head{
+    position: relative;
+}
+
+.head__link{
+    max-width: 768px;
+    position: absolute;
+    bottom: 5%;
+    left: 8%;
+}
+
+.venues{
+    position: relative;
+    
+}
+.venues__button__left{
+    position: absolute;
+    top: 30%;
+    left: -70px;
+}
+.venues__button__right{
+    position: absolute;
+    top: 30%;
+    right: -70px;
+}
+
+.venues__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.venues__list__item.one{
+    border-right: 1px solid #eeeeee;
+}
+.venues__list__item.two{
+    display: block;
 }
 
 @media only screen and (min-width: 1024px) {
 
+.museum-info{
+    display: flex;
+    justify-content: space-between;
+
+    max-height: 500px;
+}
+
+.museum-info__infos-hours{
+    display: flex;
+    justify-content: left;
+    max-width: 550px;
+    
+}
+.museum-info__infos{
+    border-bottom: none;
+    border-right: 1px solid #eeeeee;
+    padding-right: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+}
+.museum-info__infos h3{
+    margin-top: 0;
+}
+.museum-info__infos .last{
+    margin-bottom: 0;
+}
+.museum-info__hours{
+    padding-left: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.museum-info__hours .first{
+    margin-top: 0;
+}
+.museum-info__hours .last{
+    margin-bottom: 0;
+}
+.museum-info__form{
+    display: grid;
+    grid-template-columns: 285px auto 285px;
+    grid-row: 70px 70px 70px 70px 70px;
+
+    width: 50%;
+}
+.museum-info__form__firstName{
+    grid-column: 1;
+    grid-row: 1;
+}
+.museum-info__form__lastName{
+    grid-column: 3;
+    grid-row: 1;
+}
+.museum-info__form__mail{
+    grid-column: 1;
+    grid-row: 2;
+}
+.museum-info__form__tel{
+    grid-column: 3;
+    grid-row: 2;
+}
+.museum-info__form__subject{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 3;
+}
+.museum-info__form__message{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 4;
+}
+.form__submit{
+    grid-column: 1;
+    grid-row: 5;
+}
+
+/*------- style venus for computer screen (display three venues)----------*/
+
+.venues__list__item.two{
+    border-right: 1px solid #eeeeee;
+}
+.venues__list__item.three{
+    display: block;
+}
+
+/*correct position of venues' buttons*/
+.venues__button__left{
+    left: 0;
+}
+.venues__button__right{
+    right: 0;
+}
+.venues{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }

@@ -447,6 +447,9 @@
     .header__menu_desktop__a:hover {
         color: #d99578;
     }
+    .header__menu_desktop__a.active {
+        color: #d99578;
+    }
 
     .header__cart--display {
         width: auto;
