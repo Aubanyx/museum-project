@@ -1527,6 +1527,7 @@ a.morecircle {
         }
     .chiffres_bloc {
         margin-right: 100px;
+        width: 200px
         }
     .chiffres_container {
         width: auto;
