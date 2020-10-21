@@ -47,6 +47,24 @@ hr {
     background-color: #6C6C6C;
     border: none;
 }
+
+.footerbackToTop {
+    position: fixed;
+    padding: 1rem;
+    bottom: 2rem;
+    right: 2rem;
+    border: 1px solid #8f8a8c;
+    background-color: #302e2f;
+    text-decoration: none;
+}
+
+.footerbackToTop:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f077";
+    color: #8f8a8c;
+    font-size: 2rem;
+}
 /* fil d'ariane (breadcrumb) */
 .breadcrumb {
     text-transform: uppercase; 
